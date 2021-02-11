@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Sign up{% endblock %}
+{% block content %}
+    <h2>SIGN UP</h2>
+    <form method="POST">
+        {% for field in form %}
+            {{ field.label }}
+            {{ field }}
+            {% if field.errors %}
+                {% for error in field.errors %}
+                <p>{{ error }}</p>
+                {% endfor %}
+            {% endif %}
+            <br>
+        {% endfor %}
+    </form>
+{% endblock %}

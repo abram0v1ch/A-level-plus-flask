@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <p class='snippet'><a href='https://wikipedia.org/wiki/shackleton' target="_blank">Sir Ernest Shackleton</a> was an Anglo-Irish Antarctic explorer and is
+    famous, principally, for leadingthe Imperial Trans-Antartic (Endurance) Expedition of 1914-16.</p>
+
+    <p class='snippet'>He was one of the principal figures of the period known as the Heroic Age of Antartic Exploration.
+    Educated at Dulwich College and having ignored his father's wishes that he become a doctor he joined the merchant navy.
+    Of many quotes one of his most famous is, <span class='myquote'>"Difficulties are just things to overcome, after all." </span></p>
+
+    <p class='snippet'>During his life he made three trips to the Antarctic. As well as climbing Mount Erebus he made many
+    important scientific discoveries. On his fourth expedition to circumnavigate the Antartic he died of a heart attack.
+    He was buried on the Island of South Georgia.</p>
+
+</div>
+<h1 style='margin-top: 180px; margin-left: 45%;'>Gallery</h1>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style='width: 40%; position: absolute; top: 50%; left: 50%; margin-top: 60px; margin-right: -60%; transform: translate(-50%, -10%)'>
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://cdn.britannica.com/s:500x350/91/18491-004-E4B0E720/Ernest-H-Shackleton-members-planting-expedition-flag.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://cdn.britannica.com/78/145278-050-EDFFB8F5/Ernest-Shackleton.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://www.history.com/.image/t_share/MTc2MTA2MzQxMzY5MTI4ODM5/endurance-expedition-gettyimages-480805221.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+                <h1 style='margin-top: 180px; margin-left: 45%; margin-top: 550px;'>Quiz</h1>
+                <div class="accordion" id="accordionExample" style='margin-top: 20px;'>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne" style='background-color: #FFD6B6'>
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        In what year was Ernest Shackleton born?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>1874</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo" style='background-color: #FFD6B6'>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What latitude did Scott, Shackleton and Wilson reach to establish their new Farthest South record in 1902?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>82º 17' S</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree" style='background-color: #FFD6B6'>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Did Shackleton take part in the first Antarctic hot air balloon ride?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>Yes</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+{% endblock %}

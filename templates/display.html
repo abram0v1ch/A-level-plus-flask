@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Display{% endblock %}
+{% block content %}
+    <h2>Display</h2>
+    <p>First name: {{form.fname.data}}</p>
+    <p>Surname: {{form.surname.data}}</p>
+    <p>Email: {{form.email.data}}</p>
+    <p>Password: {{form.password.data}}</p>
+    <p>Password confirmation: {{form.pass_confirm.data}}</p>
+    <p>Sign up code: {{form.code.data}}</p>
+{% endblock %}
